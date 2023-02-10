@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="Es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador de texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styleEncriptador.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <h1 > <img src="imagenes/silencio.jpg"  alt="imagen representativa de silencio"> </h1>
+                
+                <div class="texto">
+                    <p>Bienvenidos al encriptador de texto</p>
+                    <p>Donde podras guardar tus mayores secretos</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <img src="imagenes/Logo.png" alt="Logo alura">
+            
+            <section class="caja">
+                <section class="ingresar">
+
+                    <div>
+                        <textarea cols="auto" rows="auto" id="mensaje" class="ingresar-mensaje" placeholder="Ingrese texto aqui"></textarea>
+                    </div>
+
+                    <div class="ingresar-botones">
+                        <legend> ⚠ Solo letras minúsculas y sin acentos </legend>
+
+                        <ul>
+                            <li><button id="boton-encriptar">Encriptar</button></li>
+                            <li><button id="boton-desencriptar">Desencriptar</button></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="desifrar">
+                    <div>
+                        <textarea readonly="readonly" cols="auto" rows="auto" id="desifrado" class="desifrar-mensaje"></textarea>
+                    </div>
+
+                    <div class="desifrar-boton">
+                        <button id="boton-copiar">Copiar</button>
+                    </div>
+
+                    <div class="desifrar-muestra">
+                        <img src="imagenes/Muñeco.png" alt="muñeco para paridad visual">
+                        
+                        <p>Ningun mensaje fue encontrado</p>
+                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    </div>
+                </section>
+            </section>
+        </main> 
+
+        <script src="challenge.js"></script>
+    </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+

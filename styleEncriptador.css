@@ -1,0 +1,262 @@
+/* Inicia codido css3 para dar formato a encriptador */
+
+header{
+    background: #00005F;
+    padding: 3em;
+}
+
+.encabezado{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.texto{
+    text-align: center;
+    color: #F0F0F0;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+
+.texto :first-child{
+    color: white;
+    font-size: 2.3em;
+}
+
+main{
+    padding: 2em 0;
+    background: #EFEFFE;
+}
+
+main img{
+    margin-left: 1em;
+}
+
+.caja{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.ingresar{
+    width: 75%;
+    margin-top: 2em;
+    text-align: center;
+    display: inline-block;
+}
+
+.ingresar-mensaje{
+    margin-bottom:1em;
+    resize: none;
+    width: 80%;
+    height: 350px;
+    border: none;
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.ingresar-mensaje::placeholder{
+    color: #00005F;
+    font-size: 1.65rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.ingresar-botones legend{
+    width: 50%;
+    text-align: center;
+    font-size: 75%;
+    margin: 1em 0;
+    color: #45556A;   
+}
+
+.ingresar-botones li {
+    display: inline;
+    margin-right: 1em;
+}
+
+.ingresar-botones button{
+    color: #00005F;
+    width: 35%;
+    height: 3.5em;
+    background: #D8DFFD;
+    border-color: #35558A;
+    border-radius: 1em;
+    transition: 75ms;
+}
+
+#boton-encriptar{
+    color: white;
+    background: #00005F;
+    border-color: #000;
+    transition: 75ms;
+}
+
+.desifrar{
+    padding: 2em 2em;
+    width: auto;
+    position: relative;
+    background: white;
+    border-radius: 2em;
+}
+
+.desifrar-mensaje{
+    width: 80%;
+    height: 350px;
+    resize: none;
+    border: none;
+    padding: 1.5rem;
+    font-size: 1.5em;
+}
+
+.desifrar-boton{
+    text-align: center;
+    background: white;
+    width: 100%;
+    padding: 4.5em 0 1em ;
+}
+
+.desifrar-boton button{
+    color: #00005F;
+    width: 75%;
+    height: 2.5em;
+    background: #EEEFFF;
+    border-color: #35558A;
+    border-radius: 1em;
+    display: none;
+    transition: 75ms;
+}
+
+.desifrar-muestra{
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%;
+}
+
+.desifrar-muestra img{
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em 0;
+}
+
+.desifrar-muestra p{
+    color: #343A60;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.desifrar-muestra p:last-child{
+    color: #35558A;
+    font-size: 80%;
+    padding-top: 3em;
+    font-weight: normal;
+}
+
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*======== PUNTOS DE INTERRUPCCION*/
+
+/*===== Para dispositivos pequeños =====*/
+
+@media screen and (max-width: 480px){
+    .encabezado{
+        width: auto;
+    }
+
+    .encabezado img{
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .texto{
+        position: static;
+        font-size: 75%;
+    }
+
+    .caja,.ingresar-botones li{
+        display: block;
+    }
+
+    .ingresar{
+        width: 90%;
+    }
+
+    .ingresar-botones button{
+        width: 120%;
+        margin-bottom: 1em;
+    }
+
+    .ingresar-botones legend{
+        width: 100%;
+    }
+
+    .desifrar-mensaje{
+        height: 100px;
+    }
+
+    .desifrar-muestra img{
+        display: none;
+    }
+}
+
+
+/*===== Tambien para dispositivos medianos =====*/
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+    .encabezado{
+        width: auto;
+    }
+
+    .encabezado img{
+        width: 100%;
+        padding: 2em 0;
+    }
+
+    .texto{
+        position: static;
+        font-size: 75%;
+    }
+
+    .caja{
+        display: block;
+    }
+
+    .ingresar{
+        width: 100%;
+    }
+
+    .ingresar-botones button{
+        width: 40%;
+        margin-bottom: 2em;
+    }
+
+    .desifrar-mensaje{
+        height: 100px;
+    }
+
+    .desifrar-muestra{
+        top: 35%;
+        left: 12%;
+    }
+
+    .desifrar-muestra img{
+        display: none;
+    }
+}
+
+
+
+
+/*===== Para dispositivos grandes es la configuracion por defecto =====*/
+
+
+
+
+
+
+
