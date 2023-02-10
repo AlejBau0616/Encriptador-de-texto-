@@ -85,4 +85,4 @@ var copiar = document.querySelector("#boton-copiar");
     desencriptar.onclick = desencriptador;
     copiar.onclick = copiador;
 
-//======== Aqui finaliza script de encriptador de texto =========
+//======== Aqui finaliza script de encriptador de texto ========
